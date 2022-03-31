@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,500&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  background-color: black;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* CSS 적용순서 
+1너비.높이.색깔-화면에 나와야함
+2위치
+3색깔 이미지로 교체 <->ex)background-image:url("/img/bg1.png") */
+
+.signin_box {
+  width: 725px;
+  height: 455px;
+  background-image: url("../img/frame_2.png");
+  background-size: cotain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.signin_box .signin {
+  /* background-color:pink; */
+  position: absolute;
+  top: 42px;
+  left: 107px;
+  width: 105px;
+  height: 41px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+  letter-spacing: -0.02em;
+  color: #F4EEE9;
+  text-shadow: 0px 0px 6px #000000;
+}
+
+.signin_box .content_box {
+  width: 600px;
+  height: 350px;
+  position: absolute;
+  top: 93px;
+  left: 104px;
+  background-color: aquamarine;
+  border-image-source: url("../img/popup_bg_black.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  border-image-slice:93 93 93 93 fill;
+  border-image-width:93px 93px 93px 93px;
+  border-image-outset:0px 0px 0px 0px;
+  border-image-repeat:repeat repeat;
+}
+.signin_box .content_box .top_Contentbox {
+  width: 100%;
+  height: 288px;
+  background-color:palegreen;
+  border-image-source: url("../img/popup_bg_white.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  border-image-slice:93 93 93 93 fill;
+  border-image-width:93px 93px 93px 93px;
+  border-image-outset:0px 0px 0px 0px;
+  border-image-repeat:repeat repeat;
+}
+
+.signin_box .content_box .top_Contentbox .metamask_box {
+  width: 520px;
+  height: 60px;
+  /* background-color: red; */
+  position: absolute;
+  left: 44px;
+  top: 41px;
+  background-image: url("../img/sign_in_box.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.signin_box .content_box .top_Contentbox .metamask_box .fox_box {
+  width: 44px;
+  height: 40px;
+  /* background-color:peru; */
+  position: absolute;
+  bottom: 10px;
+  left: 120px;
+  background-image: url("../img/meta_mask_icon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.signin_box .content_box .top_Contentbox .metamask_box .fox_textbox {
+  width: 202px;
+  height: 23px;
+  /* background-color:slateblue; */
+  position: absolute;
+  top: 19px;
+  right: 137px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: -0.02em;
+
+color: #EBEAFF;
+  /* background-image: url("/모달창이미지9개/img01/fox_text.png");
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+
+.signin_box .content_box .top_Contentbox .mail_box {
+  width: 520px;
+  height: 60px;
+  /* background-color:lawngreen; */
+  position: absolute;
+  left: 44px;
+  top: 121px;
+  background-image: url("../img/sign_in_box.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.signin_box .content_box .top_Contentbox .mail_box .letter_box {
+  width: 48px;
+  height: 30px;
+  background-color:peru;
+  position: absolute;
+  bottom: 15px;
+  left: 118px;
+  background-image: url("../img/mail_icon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.signin_box .content_box .top_Contentbox .mail_box .letter_text {
+  width: 208px;
+  height: 23px;
+  /* background-color:violet; */
+  position: absolute;
+  bottom: 17px;
+  right: 131px;
+   /* background-image: url("/모달창이미지9개/img01/letter_text.png");
+  background-size: cover;
+  background-repeat: no-repeat; */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: -0.02em;
+  color: #EBEAFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.signin_box .content_box .top_Contentbox .signupbox {
+  position: absolute;
+  width: 511px;
+  height: 64px;
+  /* background-color: #fff; */
+  bottom: 27px;
+  right: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.signin_box .content_box .top_Contentbox .signupbox .signleft {
+  display: flex;
+  align-items: center;
+}
+
+.signin_box .content_box .top_Contentbox .signupbox .point {
+  width: 10px;
+  height: 10px;
+  background-color: #736D67;
+  transform: rotate(45deg);
+  margin-right: 10px;
+}
+
+.signin_box .content_box .top_Contentbox .signupbox .signleft p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #736D67;
+}
+
+.signin_box .content_box .top_Contentbox .signupbox .signright {
+  width: 219px;
+  height: 64px;
+  background-image: url("../img/sign_up_button.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+.signin_box .content_box .top_Contentbox .signupbox .signright p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #652D12;
+}
+
+/* 부모의 자식인 태그가 넓이나 높이가 같으면 굳이 positon 속성이 필요없다 */
+.content_text {
+  width: 364px;
+  height: 21px;
+  /* 굳이 너비를 주지 않는게 좋음 */
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.content_text p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #9C919C;
+}
+
+.content_text span {
+  color: white;
+  text-decoration: underline;
+}
+
+/*
+  가운데 정렬 1번
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  */
+
+  /*
+  가운데 정렬 2번
+
+  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  */
+
+  /*
+
+  가운데 정렬 3번
+
+  text-align: center;  (가로 가운데 정렬)
+  -> 가로 넓이가 있을때만 적용(%단위 말고 정확히 px로 있어야함 )
+
+  
+  line-height: 64px; (세로가운데정렬)
+  -> 세로 높이가 %말고 px로 적용되어 있어야하고,
+  세로 높이랑 같은 값을 주면 세로 가운데 정렬이됨.
+
+  */

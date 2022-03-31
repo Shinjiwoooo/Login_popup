@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,500&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  background-color: black;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* CSS 적용순서 
+1너비.높이.색깔-화면에 나와야함
+2위치
+3색깔 이미지로 교체 <->ex)background-image:url("/img/bg1.png") */
+
+.signin_box {
+  width: 725px;
+  height: 455px;
+  border-image-source: url("../img/frame_2.png");
+  background-size: cotain;
+  background-repeat: no-repeat;
+  position: relative;
+  border-image-slice:233 30 12 242 fill;
+  border-image-width:233px 30px 12px 242px;
+  border-image-outset:0px 0px 0px 0px;
+  border-image-repeat:stretch stretch;
+}
+.signin_box .signin {
+  /* background-color:pink; */
+  position: absolute;
+  top: 42px;
+  left: 107px;
+  width: 105px;
+  height: 41px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+  letter-spacing: -0.02em;
+  color: #F4EEE9;
+  text-shadow: 0px 0px 6px #000000;
+}
+
+.signin_box .content_box {
+  width: 600px;
+  height: 350px;
+  position: absolute;
+  top: 93px;
+  left: 104px;
+  background-color: aquamarine;
+  border-image-source: url("../img/popup_bg_black.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  border-image-slice:93 93 93 93 fill;
+  border-image-width:93px 93px 93px 93px;
+  border-image-outset:0px 0px 0px 0px;
+  border-image-repeat:repeat repeat;
+}
+.signin_box .content_box .top_Contentbox {
+  width: 100%;
+  height: 288px;
+  background-color:palegreen;
+  border-image-source: url("../img/popup_bg_white.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  border-image-slice:93 93 93 93 fill;
+  border-image-width:93px 93px 93px 93px;
+  border-image-outset:0px 0px 0px 0px;
+  border-image-repeat:repeat repeat;
+}
+

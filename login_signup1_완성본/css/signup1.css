@@ -1,0 +1,416 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,500&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  background-color: black;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* CSS 적용순서 
+1너비.높이.색깔-화면에 나와야함
+2위치
+3색깔 이미지로 교체 <->ex)background-image:url("/img/bg1.png") */
+
+.signin_box {
+  width: 725px;
+  height: 575px;
+  border-image-source: url("../img/frame_2.png");
+  background-size: cotain;
+  background-repeat: no-repeat;
+  position: relative;
+  border-image-slice:233 30 12 242 fill;
+  border-image-width:233px 30px 12px 242px;
+  border-image-outset:0px 0px 0px 0px;
+  border-image-repeat:stretch stretch;
+}
+
+.signin_box .signin {
+  /* background-color:pink; */
+  position: absolute;
+  top: 42px;
+  left: 107px;
+  width: 105px;
+  height: 41px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+  letter-spacing: -0.02em;
+  color: #F4EEE9;
+  text-shadow: 0px 0px 6px #000000;
+}
+
+.signin_box .content_box {
+  width: 600px;
+  height: 470px;
+  position: absolute;
+  top: 93px;
+  left: 104px;
+  /* background-color: aquamarine; */
+  border-image-source: url("../img/popup_bg_black.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  border-image-slice:93 93 93 93 fill;
+  border-image-width:93px 93px 93px 93px;
+  border-image-outset:0px 0px 0px 0px;
+  border-image-repeat:repeat repeat;
+}
+
+.signin_box .content_box .top_Contentbox {
+  width: 600px;
+  height: 339px;
+  /* background-color:palegreen; */
+  border-image-source: url("../img/popup_bg_white.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  border-image-slice:90 90 0 90 fill;
+  border-image-width:90px 90px 0px 90px;
+  border-image-outset:0px 0px 0px 0px;
+  border-image-repeat:stretch stretch;
+}
+
+.content_box .nemo {
+  width: 24px;
+  height: 24px;
+  background: #6e6a71;
+  /* content_box  가 apsolute 지만 여기서는 apsolute가 relative 역할을 해주는듯 content_box 기준으로 움직이고 있음 이유는 아직 모르겠음. */
+  position: absolute;
+  bottom: 92px;
+  left: 106px;
+}
+
+.signin_box .content_box .checkbox {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  bottom: 92px;
+  left: 106px;
+  cursor: pointer;
+}
+
+.content_box .nemoText {
+  width: 364px;
+  height: 21px;
+  position: absolute;
+  bottom: 94px;
+  right: 94px;
+}
+.content_box .nemoText p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #9c919c;
+}
+.content_box .nemoText span {
+  color: white;
+  text-decoration: underline;
+}
+.content_box .button {
+  width: 217px;
+  height: 62px;
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("../img/silver_button.png");
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  cursor: pointer;
+  position: relative;
+}
+
+.content_box .button_text{
+  width:100%;
+  height:100%;
+  position: absolute;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.content_box .button .button_cover{
+  position: absolute;
+  bottom:4px;
+  left:4px;
+  width:209px;
+  height:54px;;
+  background-image: url("../img/disabled_pall.png");
+}
+
+.content_box .button p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #652d12;
+}
+.content_box .top {
+  width: 100%;
+  height: 339px;
+  background-image: url("");
+  position: relative;
+}
+
+.content_box .top .area1 {
+  width: 540px;
+  height: 73px;
+  position: absolute;
+  top: 37px;
+  left: 20px;
+  position: relative;
+}
+.content_box .top .area1 .unit {
+  width: 10px;
+  height: 10px;
+  background: #736d67;
+  transform: rotate(45deg);
+  top: 5px;
+  left: 0;
+}
+.content_box .top .area1 p {
+  width: 119px;
+  height: 23px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #736d67;
+  position: absolute;
+  /* 피그마랑 위치값 조금 달라서 -5px 임의로 줌 */
+  top: -5px;
+  left: 24px;
+  line-height: 23px;
+}
+.content_box .top .area1 input {
+  width: 520px;
+  height: 40px;
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+  background: #736d67;
+}
+.content_box .top .area1 input::placeholder {
+  padding-left: 20px;
+  color: white;
+  /* 400 없어서 normal 로 줌 */
+  font-weight: normal;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.content_box .top .area2 {
+  width: 540px;
+  height: 73px;
+  position: absolute;
+  top: 131px;
+  left: 20px;
+}
+.content_box .top .area2 .unit {
+  width: 10px;
+  height: 10px;
+  background: #736d67;
+  transform: rotate(45deg);
+  top: 5px;
+  left: 0;
+}
+.content_box .top .area2 p {
+  width: 119px;
+  height: 23px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #736d67;
+  position: absolute;
+  /* 피그마랑 위치값 조금 달라서 -5px 임의로 줌 */
+  top: -5px;
+  left: 24px;
+  line-height: 23px;
+}
+.content_box .top .area2 input {
+  width: 520px;
+  height: 40px;
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+  background: #736d67;
+}
+/* input::placeholder 는 placeholder 한테만 속성을 주는거임.  */
+.content_box .top .area2 input::placeholder {
+  padding-left: 20px;
+  color: white;
+  /* 400 없어서 normal 로 줌 */
+  font-weight: normal;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.content_box .top .area3 {
+  width: 540px;
+  height: 73px;
+  position: absolute;
+  top: 225px;
+  left: 20px;
+}
+.content_box .top .area3 .unit {
+  width: 10px;
+  height: 10px;
+  background: #736d67;
+  transform: rotate(45deg);
+  top: 5px;
+  left: 0;
+}
+.content_box .top .area3 p {
+  /* 글씨가 2줄로 나와서 임의로 width 바꿔줌 */
+  width: 163px;
+  height: 23px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #736d67;
+  position: absolute;
+  /* 피그마랑 위치값 조금 달라서 -5px 임의로 줌 */
+  top: -5px;
+  left: 24px;
+  line-height: 23px;
+}
+.content_box .top .area3 input {
+  width: 520px;
+  height: 40px;
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+  background: #736d67;
+}
+.content_box .top .area3 input::placeholder {
+  padding-left: 20px;
+  color: white;
+  /* 400 없어서 normal 로 줌 */
+  font-weight: normal;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}

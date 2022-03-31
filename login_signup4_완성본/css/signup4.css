@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  background-color: black;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* CSS 적용순서 
+1너비.높이.색깔-화면에 나와야함
+2위치
+3색깔 이미지로 교체 <->ex)background-image:url("/img/bg1.png") */
+
+/* signup */
+.signup5_box {
+  width: 725px;
+  height: 575px;
+  border-image-source: url("../img/frame_2.png");
+  background-size: cotain;
+  background-repeat: no-repeat;
+  position: relative;
+  border-image-slice:233 30 12 242 fill;
+  border-image-width:233px 30px 12px 242px;
+  border-image-outset:0px 0px 0px 0px;
+  border-image-repeat:stretch stretch;
+}
+
+.signup5_box .signup {
+  /* background-color:pink; */
+  position: absolute;
+  top: 42px;
+  left: 107px;
+  width: 105px;
+  height: 41px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+  letter-spacing: -0.02em;
+  color: #F4EEE9;
+  text-shadow: 0px 0px 6px #000000;
+}
+
+
+/* content5_box */
+.signup5_box .content5_box {
+  width: 600px;
+  height: 470px;
+  position: absolute;
+  top: 93px;
+  left: 104px;
+  /* background-color: aquamarine; */
+  border-image-source: url("../img/popup_bg_black.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  border-image-slice:93 93 93 93 fill;
+  border-image-width:93px 93px 93px 93px;
+  border-image-outset:0px 0px 0px 0px;
+  border-image-repeat:repeat repeat;
+}
+
+.content5_box > p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: white;
+  position: absolute;
+  top: 37px;
+  left: 208px;
+}
+.content5_box .area {
+  width: 560px;
+  height: 306px;
+  position: absolute;
+  top: 74px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+.content5_box .area span {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  color: #ebeaff;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.content5_box .area p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(235, 234, 255, 0.4);
+  position: absolute;
+  left: 15px;
+}
+/* top 간격 피그마에 없어서 피그마에서 재서 했음. */
+.content5_box .area .one {
+  top: 55px;
+}
+.content5_box .area .two {
+  top: 90px;
+}
+.content5_box .area .three {
+  top: 145px;
+}
+.content5_box .area .four {
+  top: 180px;
+}
+.content5_box .area .five {
+  top: 250px;
+}
+
+.content5_box .decline {
+  width: 217px;
+  height: 62px;
+  background-image: url("../img/silver_button.png");
+  position: absolute;
+  left: 82px;
+  bottom: 16px;
+}
+
+.content5_box .agree {
+  width: 217px;
+  height: 62px;
+  background-image: url("../img/gold_button.png");
+  position: absolute;
+  right: 82px;
+  bottom: 16px;
+}
+
+.content5_box > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content5_box > div p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  /* line-height: 28px; */
+  /* text-align: center;
+  text-transform: capitalize; */
+  color: #652D12;
+  
+}
+
+
+
+

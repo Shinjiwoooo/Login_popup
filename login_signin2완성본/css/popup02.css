@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  background-color: black;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+/* signbox, contentbox */
+
+.signin_box {
+  width: 633px;
+  height: 383px;
+  border-image-source: url("../img/frame_3.png");
+  /* background-size: cotain;
+  background-repeat: no-repeat; */
+  position: relative;
+  border-image-slice: 30 30 12 12 fill;
+  border-image-width: 30px 30px 12px 12px;
+  border-image-outset: 0px 0px 0px 0px;
+  position: relative;
+}
+
+.signin_box .content_box {
+  position: absolute;
+  width: 600px;
+  height: 350px;
+  left: 12px;
+  bottom: 12px;
+  /* background-color: aquamarine; */
+  /* background-size: contain;
+  background-repeat: no-repeat; */
+  border-image-source: url("../img/popup_bg_black.png");
+  border-image-slice: 93 93 93 93 fill;
+  border-image-width: 93px 93px 93px 93px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: repeat repeat;
+}
+
+.signin_box .content_box .content_title {
+  width: 260px;
+  height: 28px;
+  /* background-color:pink; */
+  position: absolute;
+  left: 169px;
+  top: 30px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+
+
+
+/* input */
+.signin_box .content_box .email_input {
+  width: 520px;
+  height: 45px;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 84px;
+  left: 39px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: rgba(235, 234, 255, 0.4);
+
+}
+
+.signin_box .content_box .password_input {
+  width: 520px;
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 149px;
+  left: 39px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: rgba(235, 234, 255, 0.5);
+}
+
+
+
+
+/* rememberbox */
+.signin_box .content_box .rememberme_box {
+  width: 520px;
+  height: 50px;
+  /* background-color: red; */
+  position: absolute;
+  left: 39px;
+  top: 214px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.signin_box .content_box .checkbox {
+  margin-left: 0px;
+  width: 30px;
+  height: 30px;
+  background-color: purple;
+  cursor: pointer;
+}
+
+.signin_box .content_box .checklabel {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: #FACE31;
+  cursor: pointer;
+}
+
+.signin_box .content_box input[type="checkbox"] {
+  display: none;
+}
+
+.signin_box .content_box input[type="checkbox"]:checked + label {
+  background-image: url("../img/Vector.png");
+  background-repeat: no-repeat;
+  background-size: cotain;
+  background-position: 50% 50%;
+}
+
+/* .signin_box .content_box input[type="checkbox"]:checked {
+  accent-color: #FACE31;
+  color: white;
+} */
+
+.signin_box .content_box .rememberme_box .rememberme_textbox {
+  width: 475px;
+  height: 30px;
+  /* background-color: blue; */
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.signin_box .content_box .rememberme_box .rememberme_textbox .Remember {
+  width: 131px;
+  height: 23px;
+  /* background-color: lawngreen; */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #EBEAFF;
+}
+
+.signin_box .content_box .rememberme_box .rememberme_textbox .forget {
+  width: 160px;
+  height: 23px;
+  /* background-color: darkgreen; */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #EBEAFF;
+}
+
+
+
+
+
+
+/*signinbox */
+.signin_box .content_box .signinbox {
+  width: 528px;
+  height: 62px;
+  /* background-color: #fff; */
+  background-image: url("../img/sign_in_button_big.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 26px;
+  left: 35px;
+  cursor: pointer;
+}
+
+.signin_box .content_box .signinbox p {
+  width: 75px;
+  height: 28px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #652D12;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
